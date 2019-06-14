@@ -15,5 +15,5 @@ getCorrelationMatrix<-function(year){
   numericalByYear <- filter(numericalOnly,Year==year)
   clean <- na.omit(numericalByYear)
   answer<- corrplot(cor(clean), method = "circle")
-  return(clean)
+  return(answer)
 }
